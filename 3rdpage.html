@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ZenFit Studio</title>
+    <style>
+        /* ===== Global Styles ===== */
+        :root {
+            --primary: #3a5a78;
+            --secondary: #FF1C03; /* Orange-red color */
+            --dark: #2c3e50;
+            --light: #ecf0f1;
+        }
+       
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+       
+        body {
+    background: 
+        linear-gradient(
+            rgba(241, 236, 236, 0.1),  /* Very subtle light overlay (10%) */
+            rgba(0, 0, 0, 0.3)         /* Dark overlay (30%) */
+        ),
+        url('https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80') 
+        no-repeat center center/cover fixed;
+    color: var(--light);
+    line-height: 1.6;
+    min-height: 100vh;
+}
+        /* ===== Main Content Styles ===== */
+        .main-content {
+            flex: 1;
+            padding: 4rem 2rem;
+            max-width: 1200px;
+            margin: 0 auto;
+            width: 100%;
+        }
+
+        .class-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 2rem;
+            margin-bottom: 4rem;
+        }
+
+        .class-card {
+            flex: 1;
+            min-width: 300px;
+            padding: 2rem;
+            background-color: white;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            text-align: center;
+        }
+
+        .class-card h2 {
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: var(--secondary); /* This makes the headings orange */
+}
+
+        .class-card p {
+            font-size: 1rem;
+            margin-bottom: 1.5rem;
+            color: #666;
+        }
+
+        .class-btn {
+            display: inline-block;
+            padding: 0.6rem 1.5rem;
+            background-color: var(--secondary);
+            color: white;
+            text-decoration: none;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            border-radius: 4px;
+            transition: all 0.3s;
+        }
+
+        .class-btn:hover {
+            background-color: #d35400;
+            transform: translateY(-2px);
+        }
+
+        /* ===== Footer Styles ===== */
+        footer {
+            background-color: black;
+            padding: 3rem 2rem;
+            width: 100%;
+            color: white;
+        }
+
+        .footer-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+
+        .footer-brand {
+            flex: 1;
+            min-width: 200px;
+            margin-bottom: 2rem;
+        }
+
+        .footer-brand h3 {
+            font-size: 1.5rem;
+            margin-bottom: 1rem;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+
+        .footer-links {
+            flex: 1;
+            min-width: 200px;
+            margin-bottom: 2rem;
+        }
+
+        .footer-links h4 {
+            font-size: 1rem;
+            margin-bottom: 1rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .footer-links ul {
+            list-style: none;
+        }
+
+        .footer-links li {
+            margin-bottom: 0.5rem;
+        }
+
+        .footer-links a {
+            color: white;
+            text-decoration: none;
+            font-size: 0.9rem;
+            transition: color 0.3s;
+        }
+
+        .footer-links a:hover {
+            color: var(--secondary);
+        }
+    </style>
+</head>
+<body>
+    <!-- Main Content Section -->
+    <main class="main-content">
+        <div class="class-container">
+            <div class="class-card">
+                <h2>SIGNATURE CLASSES</h2>
+                <p>New and unlimited classes exclusive to ZenFit. Designed for the individual</p>
+                <a href="#" class="class-btn">DISCOVER CLASSES</a>
+            </div>
+            
+            <div class="class-card">
+                <h2>AUTHENTIC PILATES</h2>
+                <p>New and unlimited classes exclusive to ZenFit. Designed for the individual</p>
+                <a href="#" class="class-btn">DISCOVER CLASSES</a>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer Section -->
+    <footer>
+        <div class="footer-container">
+            <div class="footer-brand">
+                <h3>ZENFIT STUDIO</h3>
+            </div>
+            
+            <div class="footer-links">
+                <h4>MEMBER BENEFITS</h4>
+                <ul>
+                    <li><a href="#">CLASS SCHEDULE</a></li>
+                    <li><a href="#">OUR TEAM</a></li>
+                    <li><a href="#">ABOUT US</a></li>
+                    <li><a href="#">VISIT A CLUB</a></li>
+                    <li><a href="#">CONTACT</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
